@@ -1,3 +1,7 @@
+The following information is not original content produced by me.
+Full credit goes to Professor Kristof Boehmer, who taught the Software Engineering 1 (2022W)
+course at the University of Vienna, for his insightful teachings and contributions to the subject matter.
+
 How to import this project into Eclipse:
 1) Start Eclipse
 2) File -> Import
@@ -5,6 +9,26 @@ How to import this project into Eclipse:
 4) select the root folder of this project (unpack the compressed file first). The correct root folder is the folder the ReadMe is placed in.
 5) Press "next", then "finish" 
 6) wait till the configuration and the library download is finished (an Internet connection is required).
+
+Client-Server Architecture.
+
+Client: 
+- Represents a "Referee" to the Clients
+- is in Interaction with the Clients
+- receives Data from the Client processes and validates it. 
+
+The concept of the game is a two-player contest played on a map that can be either 10x10 or 20x5. 
+Each player controls a 10x5 half-map, which they must send to the server to create the full map.
+
+Each half-map consists of nodes with x and y coordinates and a terrain (water, mountain, or grass)
+and a fort (or "spawnpoint"). The players must abide by certain rules when creating their half-maps, 
+such as avoiding islands and ensuring a minimum amount of each terrain type.
+
+The goal of the game is for each player to find and retrieve a hidden treasure,
+located somewhere on the full map created by the server.
+The treasure and the enemy fort are not visible at the start of the game,
+and can only be discovered by moving onto new fields. Players may not move onto water terrain. 
+The winner is the player who successfully retrieves the treasure and brings it to the enemy fort.
 
 
     
